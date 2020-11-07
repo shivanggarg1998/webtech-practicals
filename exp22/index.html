@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function changeCase(text) {
+            console.log("Changed text is: ", text.split("").map((char) => {
+                if (char.toLowerCase() == char) {
+                    return char.toUpperCase();
+                }
+                else {
+                    return char.toLowerCase();
+                }
+            }).join(""));
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
