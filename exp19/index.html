@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #stats {
+            width: 100%;
+            padding: 50px 0;
+            background-color: lightblue;
+            margin: 0 auto;
+            display: none;
+        }
+
+        #stats>table {
+            margin: 0 auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p onclick="myFunction()">Shivang Garg</button>
+
+    <div id="stats">
+        <table>
+            <tr>
+                <th>
+                    NAME:
+                </th>
+                <td>
+                    Shivang Garg
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    HP:
+                </th>
+                <td>
+                    100%
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    K/D:
+                </th>
+                <td>
+                    5/10
+                </td>
+            </tr>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("stats");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
