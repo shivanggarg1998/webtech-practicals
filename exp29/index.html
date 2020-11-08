@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function countWords(text) {
+            text = text.trim();
+            console.log("Removed start and end spaces: ", text);
+            text = text.replace(/\n/g, " ");
+            console.log("Exclude newline with a start spacing: ", text);
+            text = text.replace(/  +/g, " ");
+            console.log("Convert 2 or more spaces to 1: ", text);
+            var ans = text.split(" ");
+            console.log("No of words are: ", ans);
+            return ans.length;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
